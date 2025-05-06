@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "director": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "poster": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
