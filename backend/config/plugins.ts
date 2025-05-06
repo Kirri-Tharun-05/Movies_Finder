@@ -1,7 +1,7 @@
 module.exports = {
   'meilisearch': {
     config: {
-      host: 'https://meilisearch-service-zq9f.onrender.com',
+      host: 'https://meilisearch-production-afd7.up.railway.app/',
       apiKey: 'kirriTharun', // Optional if your Strapi reads from .env
       indexes: [
         {
