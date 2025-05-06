@@ -1,8 +1,7 @@
-
 export default {
-  entries: [
-    {
-      index: 'movies',
+  indexes: {
+    movies: {
+      indexName: 'movies',
       collection: 'api::movie.movie',
       transformEntry({ entry }) {
         return {
@@ -15,5 +14,5 @@ export default {
         };
       },
     },
-  ],
+  },
 };
