@@ -33,8 +33,8 @@
 module.exports = {
   meilisearch: {
     config: {
-      host: process.env.MEILISEARCH_HOST,
-      apiKey: process.env.MEILISEARCH_API_KEY,
+      host: 'https://meilisearch-production-cf2e.up.railway.app',
+      apiKey: 'kirritharun05',
       indexes: [
         {
           name: 'movies', // Meilisearch index name
