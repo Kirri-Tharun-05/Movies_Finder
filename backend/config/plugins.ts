@@ -1,8 +1,8 @@
 module.exports = {
   'meilisearch': {
     config: {
-      host: 'https://meilisearch-production-afd7.up.railway.app/',
-      apiKey: 'oGLp7icnUX_ZvXrSW_RvtNVCbskFSihSRWUy1M3vWfg', // Optional if your Strapi reads from .env
+      host: process.env.MEILISEARCH_HOST,
+      apiKey: process.env.MEILISEARCH_API_KEY, // Optional if your Strapi reads from .env
       indexes: [
         {
           name: 'movies', // Meilisearch index name
