@@ -35,10 +35,10 @@ module.exports = {
     config: {
       host: 'https://meilisearch-production-cf2e.up.railway.app',
       apiKey: 'kirritharun05',
-      indexes: [
-        {
-          name: 'movies', // Meilisearch index name
-          contentType: 'api::movie.movie', // Reference to your Strapi collection
+      indexes: {
+        movie: {
+          indexName: 'movies',
+          contentType: 'api::movie.movie',
           transformEntry({ entry }) {
             return {
               id: entry.id,
@@ -52,7 +52,7 @@ module.exports = {
             displayedAttributes: ['id', 'title', 'director', 'genre'],
           },
         },
-      ],
+      },
     },
   },
 };
