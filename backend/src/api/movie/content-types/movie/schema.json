@@ -18,22 +18,6 @@
     },
     "genre": {
       "type": "string"
-    },
-    "releaseDate": {
-      "type": "date"
-    },
-    "poster": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "description": {
-      "type": "blocks"
     }
   }
 }
